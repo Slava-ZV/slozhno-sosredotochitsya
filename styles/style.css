@@ -250,8 +250,7 @@ h4.title-decor {
   }
   .section-columns {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    display: grid;
+    grid-template-columns: 315px auto;
     gap: 20px;
   }
 
