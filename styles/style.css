@@ -94,7 +94,7 @@
 .page {
   margin-inline: auto;
   color: var(--text-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font) monospace;
   font-style: normal;
   background: var(--background);
   background-attachment: fixed;
@@ -104,8 +104,8 @@
 
 .header {
   display: grid;
-  min-block-size: 768px;
-  block-size: 100vh;
+  block-size: 768px;
+  min-block-size: 668px;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 
@@ -221,8 +221,8 @@ h4.title-decor {
 
 .footer {
   display: grid;
-  min-block-size: 768px;
-  block-size: 100vh;
+  block-size: 768px;
+  min-block-size: 668px;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 }
@@ -281,7 +281,6 @@ h4.title-decor {
   }
 
   .art__img {
-    object-fit: cover;
     block-size: 100%;
   }
 
@@ -322,12 +321,9 @@ h4.title-decor {
 
   .header__theme-menu-list {
     grid-auto-flow: column;
-    gap: 10px;
   }
 
   .section-columns {
-    display: grid;
-    gap: 20px;
     grid-template-columns: 315px auto;
   }
 
