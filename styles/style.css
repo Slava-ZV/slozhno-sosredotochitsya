@@ -94,7 +94,7 @@
 .page {
   margin-inline: auto;
   color: var(--text-color);
-  font-family: var(--main-font) monospace;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   background: var(--background);
   background-attachment: fixed;
