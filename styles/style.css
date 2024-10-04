@@ -94,7 +94,7 @@
 .page {
   margin-inline: auto;
   color: var(--text-color);
-  font-family: monospace;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   background: var(--background);
   background-attachment: fixed;
@@ -106,7 +106,6 @@
   display: grid;
   block-size: 768px;
   min-block-size: 668px;
-  block-size: 100vh;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 
@@ -226,7 +225,6 @@ h4.title-decor {
   display: grid;
   block-size: 768px;
   min-block-size: 668px;
-  block-size: 100vh;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 }
