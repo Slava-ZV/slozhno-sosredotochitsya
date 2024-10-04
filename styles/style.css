@@ -94,7 +94,7 @@
 .page {
   margin-inline: auto;
   color: var(--text-color);
-  font-family: var(--main-font), monospace;
+  font-family: var(--main-font);
   font-style: normal;
   background: var(--background);
   background-attachment: fixed;
@@ -104,8 +104,8 @@
 
 .header {
   display: grid;
-  block-size: 768px;
-  min-block-size: 668px;
+  min-block-size: 768px;
+  block-size: 100vh;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 
@@ -121,7 +121,6 @@
 
 .header__theme-menu-list {
   display: grid;
-  grid-auto-flow: column;
   gap: 10px;
   color: var(--accent-color-btn);
 }
@@ -218,13 +217,12 @@ h4.title-decor {
 .art__img {
   object-fit: cover;
   inline-size: 100%;
-  block-size: 100%;
 }
 
 .footer {
   display: grid;
-  block-size: 768px;
-  min-block-size: 668px;
+  min-block-size: 768px;
+  block-size: 100vh;
   grid-template-rows: 1fr auto 1fr;
   padding: clamp(10px, 2.666vw, 20px);
 }
@@ -250,7 +248,7 @@ h4.title-decor {
   }
   .section-columns {
     display: grid;
-    grid-template-columns: 315px auto;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
@@ -280,6 +278,11 @@ h4.title-decor {
     gap: 20px;
     object-fit: cover;
     max-block-size: calc(100vw + 23px);
+  }
+
+  .art__img {
+    object-fit: cover;
+    block-size: 100%;
   }
 
   .art__img__sunset {
@@ -315,6 +318,17 @@ h4.title-decor {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+  }
+
+  .header__theme-menu-list {
+    grid-auto-flow: column;
+    gap: 10px;
+  }
+
+  .section-columns {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 315px auto;
   }
 
   .what__title {
